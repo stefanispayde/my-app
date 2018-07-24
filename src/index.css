@@ -1,10 +1,24 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  background-color: #FFFAFA;
   margin: 20px;
+}
+
+body, li button, ol, ul, .square {
+  font-family: 'Montserrat', sans-serif;
 }
 
 ol, ul {
   padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #696969;
+}
+
+.game-info ol, div {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #696969;
 }
 
 .board-row:after {
@@ -18,18 +32,19 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: #FFFAFA;
+  border: 2px solid #696969;
   float: left;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
+  color: #696969;
   line-height: 34px;
-  height: 34px;
+  height: 136px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 136px;
 }
 
 .square:focus {
@@ -37,7 +52,7 @@ ol, ul {
 }
 
 .kbd-navigation .square:focus {
-  background: #ddd;
+  background: #FFFAFA;
 }
 
 .game {
@@ -47,4 +62,11 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+li button {
+  font-weight: 300;
+  font-size: 11px;
+  margin-top: 5px;
+  border: 1px solid #696969;
 }
